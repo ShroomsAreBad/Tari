@@ -16,25 +16,29 @@
   }
 	
 	function necoArc(){
-	    var audio = document.getElementById("audio");
+	    	var audio = document.getElementById("audio");
+		var audio1 = document.getElementById("audio");
+		var audio2 = document.getElementById("audio");
+		var audio3 = document.getElementById("audio");
+		var audio4 = document.getElementById("audio");
 		audio.currentTime = 0.2;
         if(num <10){
         audio.play();
         }
         else if(num =>10){
         audio.play();
-        setTimeout(()=> {audio.play();}, 50);
+        setTimeout(()=> {audio.play1();}, 100);
         }
         else if(num=>300){
         audio.play();
-        setTimeout(()=> {audio.play();}, 50);
-        setTimeout(()=> {audio.play();}, 75);
+        setTimeout(()=> {audio.play1();}, 100);
+        setTimeout(()=> {audio.play2();}, 125);
         }
         else if(num=>1000){
         audio.play();
-        setTimeout(()=> {audio.play();}, 50);
-        setTimeout(()=> {audio.play();}, 75);
-        setTimeout(()=> {audio.play();}, 100);
+        setTimeout(()=> {audio.play1();}, 100);
+        setTimeout(()=> {audio.play2();}, 150);
+        setTimeout(()=> {audio.play3();}, 200);
         }
         
 	}
